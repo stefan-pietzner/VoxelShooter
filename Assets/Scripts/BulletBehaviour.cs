@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
 
-    private float bulletSpeed = 10f;
+    public float bulletSpeed { get; } = 10f;
 
     void Start()
     {
@@ -21,16 +21,11 @@ public class BulletBehaviour : MonoBehaviour
         }
     }
 
-    public float GetBulletSpeed()
-    {
-        return bulletSpeed;
-    }
-
     public void Shoot()
     {
         Rigidbody2D bulletRB = GetComponent<Rigidbody2D>();
         transform.Translate(0f, 0.1f, 1.5f);
-        bulletRB.AddForce(bulletRB.transform.right * GetBulletSpeed(), ForceMode2D.Impulse);
+        bulletRB.AddForce(bulletRB.transform.right * bulletSpeed, ForceMode2D.Impulse);
         Debug.Log(bulletRB.transform.right + " " + bulletRB.velocity);
     }
 }

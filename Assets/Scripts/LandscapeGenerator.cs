@@ -17,7 +17,7 @@ public class LandscapeGenerator : MonoBehaviour
 
         while (tileSetPoint.y < upperEdge.y)
         {
-
+            
             while (tileSetPoint.x < (rightEdge.x + tile.transform.localScale.x))
             {
                 Instantiate(tile, tileSetPoint, tile.transform.rotation, terrain.transform);

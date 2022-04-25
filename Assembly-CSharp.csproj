@@ -56,8 +56,8 @@
     <Compile Include="Assets\Scripts\BulletBehaviour.cs" />
     <Compile Include="Assets\Scripts\LandscapeGenerator.cs" />
     <Compile Include="Assets\Scripts\GameBehaviour.cs" />
-    <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\BaseScript.cs" />
+    <Compile Include="Assets\Scripts\InputManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
